@@ -1,0 +1,820 @@
+/* CSS Document */
+/*SI*/
+* { /* Reset de estilos */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    box-sizing: border-box; /* Modelo de caja de borde */
+}
+/* SI */
+body {
+    font-family: 'Poppins', sans-serif; /* Cambiar a Poppins */
+    color: #333;
+    background-image: url('./imagenes/fondoWeb2.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: contain; /* Asegúrate de que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    cursor:pointer
+    
+}
+/*SI*/
+.heroActive { /* Clase activa para el fondo de las secciones */
+    /*height: 100vh; /* Alto completo */
+    background-image: url('./imagenes/fondoWeb2.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Asegúrate de que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /*display: flex; /* Flexbox para centrar contenido */
+    /*justify-content: center; /* Centra horizontalmente */
+    /*align-items: center; /* Centra verticalmente */
+    /*color: white; /* Color de texto blanco */
+    /*text-align: center; /* Alineación de texto */
+   /* transition: opacity 0.5s ease; /* Transición de opacidad */
+   /* opacity: 1; /* Asegúrate de que la opacidad inicial sea 1 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION INICIO */
+/*SI*/
+.containerInicio { /* Contenido del héroe */
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Alineación de texto */
+    height: 100%; /* Asegúrate de que ocupe todo el alto de la sección */
+}
+/*SI*/
+.btnInicioContainer { /* Contenedor de boton Inicio */
+    /*display: flex; /* Flexbox para centrar contenido */
+    /*flex-direction: row; /* Coloca los elementos en fila */
+    padding: 15px; /* Espaciado interno */
+}
+/*.hero-content a{ /* Botón de contacto 
+    display: flex;
+    flex-direction: row;
+}*/
+/*.hero-content p { /* Párrafo de texto 
+    font-size: 24px;
+    margin-bottom: 20px;
+}*/
+/*SI*/
+.h1InicioAntonio { /* Título principal */
+    font-size: 48px; /* Tamaño de fuente grande */
+    /*font-weight: 700; /* Grosor del texto */
+    color: white; /* Color brillante */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* Sombra suave */
+        0 0 10px rgba(105, 225, 255, 0.7), /* Brillo adicional */
+        0 0 15px rgba(20, 208, 255, 0.7); /* Brillo más intenso */
+}
+/*SI*/
+.btnContacto { /* Botón de contacto */
+    font-family: 'Helvetica', sans-serif; /* Tipografía elegante */
+    font-weight: bold; /* Grosor del texto */
+    padding: 10px 20px;
+    background-color: #3498db; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 30px; /* Bordes redondeados */
+    /*border: 2px solid transparent; /* Borde transparente inicial */
+    /*position: relative; /* Posición relativa para efectos */
+    /*overflow: hidden; /* Ocultar desbordes */
+    /*transition: color 0.4s, border-color 0.4s; /* Transiciones suaves */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/*SI*/
+.btnContacto:hover { /* Efecto hover */
+    color: #333; /* Cambiar color del texto */
+    border-color: #333; /* Cambiar borde al hacer hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4); /* Sombra brillante */
+}
+/*SI*//*
+.btnContacto:hover::before { /* Efecto hover */
+    /*transform: translate(-30%, -30%) scale(1); /* Escalar al hacer hover */
+    /*z-index: 1; /* Delante del texto 
+    } */
+/*SI*/
+.btnCV { /* Botón de CV */
+    font-family: 'Helvetica', sans-serif; /* Tipografía elegante */
+    font-weight: bold; /* Grosor del texto */
+    padding: 10px 20px;
+    background-color: #3498db; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 30px; /* Bordes redondeados */
+    /*border: 2px solid transparent; /* Borde transparente inicial */
+    /*position: relative; /* Posición relativa para efectos */
+    /*overflow: hidden; /* Ocultar desbordes */
+    /*transition: color 0.4s, border-color 0.4s; /* Transiciones suaves */
+    margin-right: 20px;
+}
+
+/*SI*/
+.btnCV:hover { /* Efecto hover */
+    color: #333; /* Cambiar color del texto */
+    border-color: #333; /* Cambiar borde al hacer hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4); /* Sombra brillante */
+}
+/*SI*/ /*
+.btnCV:hover::before { /* Efecto hover 
+    transform: translate(-30%, -30%) scale(1); /* Escalar al hacer hover 
+    z-index: 1; /* Delante del texto 
+    }*/
+/*SI*/
+.ingenieroInformatico { 
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */
+    font-size: 30px; /* Tamaño de fuente grande */
+    font-weight: 700; /* Grosor del texto */
+    color: white; /* Color original y vibrante */
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Espaciado interno */
+    text-shadow: 
+        0 0 5px rgba(119, 118, 118, 0.8), /* Sombra suave */
+        0 0 10px rgba(147, 149, 149, 0.7), /* Brillo adicional */
+        0 0 15px rgba(88, 89, 89, 0.7); /* Brillo más intenso */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU HORIZONTAL*/
+/*SI*/
+.headerMenuHorizontal { /* menu de navegación */
+    position: fixed; /* Encabezado fijo */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegura que el encabezado esté encima */
+    background-color: #333; /* Color de fondo oscuro */
+    padding: 15px 0; /* Espaciado arriba y abajo */
+    box-shadow: 0 2px 10px rgb(252, 252, 252); /* Sombra sutil */
+}
+/*SI*/
+.ulMenuHorizontal { /* Lista de navegación */
+    /*list-style: none; /* Quitar el estilo de lista */
+    /*padding: 0; /* Quitar el padding */
+    /*margin: 0; /* Quitar el margen */
+    display: flex; /* Hacer la lista horizontal */
+}
+
+/*SI*/
+.liInicio,
+.liSobreMi,
+.liProyectos,
+.liPortfolio,
+.liExperiencia,
+.liContacto { /* Elementos de la lista */
+    margin: 0 20px; /* Espaciado entre elementos horizontalmente */
+}
+/*SI*/
+.aInicio,
+.aSobreMi,
+.aProyectos,
+.aPortfolio,
+.aExperiencia,
+.aContacto { /* Enlaces de la lista */
+    text-decoration: none; /* Quitar subrayado */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    /*transition: color 0.3s; /* Transición de color */
+}
+
+/*
+.btn:hover { /* Efecto hover 
+    background-color: #ffffff;
+}*/
+/*SI*/
+section { /* Secciones */
+    position: absolute; /* Posición absoluta */
+    /*top: 0; /* Asegura que las secciones estén en la posición correcta */
+    /*left: 0; /* Asegura que las secciones estén en la posición correcta */
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Alto completo */
+    overflow-y: auto; /* Scroll independiente */
+    /*display: none; /* Ocultas por defecto */
+    /*opacity: 0; /* Opacidad inicial */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transición de opacidad */
+    visibility: hidden; /* Ocultas por defecto */
+    /*transform: translateY(0); /* Asegura que las secciones estén en la posición correcta */
+}
+/*SI*/
+section.active { /* Sección activa */
+    /*display: block; /* Solo muestra la sección activa */
+    /*opacity: 1; /* Asegúrate de que la opacidad sea 1 */
+    visibility: visible; /* Asegúrate de que la visibilidad sea visible */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION PROYECTOS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION FOOTER*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgb(252, 252, 252); /* Sombra sutil */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION PORTFOLIO*/
+#portfolio {
+    padding: 70px 70px; /* Espaciado dentro de la sección */
+}
+
+#portfolio .containerPortfolio {
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.8); /* Semitransparente */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+#portfolio .tituloSobreMi {
+    font-size: 20px; /* Tamaño de fuente grande */
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */ 
+    font-weight: 700; /* Grosor del texto */
+    color: #2c3e50; /* Color del texto */
+    text-align: left; /* Alineación de texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    background: linear-gradient(90deg, #007bff, #63adde); /* Degradado moderno */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 0px 10px; /* Espaciado interno */
+    margin-bottom: 5px; /* Espaciado inferior */
+    display: inline-block; /* Asegura que el fondo se ajuste al texto */
+}
+
+#portfolio .subtituloSobreMi {
+    font-size: 18px; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500; 
+    color: #333; /* Cambia el color de texto a #333 */
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 0 10px; 
+    margin-bottom: 15px;
+    display: inline-block;
+    border-bottom: 3px solid #007bff; /* Línea azul debajo */
+}
+
+
+#portfolio .tituloSobreMi i {
+    font-size: 20px; /* Tamaño de la fuente igual al del título */
+    color: #2c3e50; /* Color del icono */
+    vertical-align: middle; /* Alineación vertical para centrar con el texto */
+}
+
+#portfolio .experienciaLaboral,
+#portfolio .educacion,
+#portfolio .idiomas,
+#portfolio .competencias,
+#portfolio .estudiosUniversitarios {
+    margin: 20px 0; /* Espaciado superior e inferior */;
+    padding: 20px; /* Espaciado interno */
+    background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(255,255,255,0.8)); /* Degradado sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más marcada */
+    border: 2px solid #007bff; /* Borde azul */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+#portfolio .experienciaLaboral h3,
+#portfolio .educacionItem h3,
+#portfolio .idiomaItem h3,
+#portfolio .competenciaItem h3,
+#portfolio .estudiosItem h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+}
+
+#portfolio .experienciaLaboral p,
+#portfolio .educacionItem p,
+#portfolio .idiomaItem p,
+#portfolio .competenciaItem p,
+#portfolio .estudiosItem p,
+#portfolio .musicaItem p,
+#portfolio .historiaItem p,
+#portfolio .geologiaItem p {
+    font-size: 1.1rem;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+#portfolio .educacionItem,
+#portfolio .idiomaItem,
+#portfolio .competenciaItem,
+#portfolio .estudiosItem,
+#portfolio .charlaItem,
+#portfolio .materias,
+#portfolio .tareasItem,
+#portfolio .musicaItem ,
+#portfolio .historiaItem ,
+#portfolio .geologiaItem,
+#portfolio .cursoItem {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 123, 255, 0.1); /* Fondo sutil */
+    border-left: 5px solid #007bff; /* Línea de borde a la izquierda */
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#portfolio .educacionItem::before,
+#portfolio .idiomaItem::before,
+#portfolio .competenciaItem::before,
+#portfolio .estudiosItem::before,
+#portfolio .charlaItem::before,
+#portfolio .materias::before,
+#portfolio .tareasItem::before,
+#portfolio .musicaItem::before,
+#portfolio .historiaItem::before,
+#portfolio .geologiaItem::before,
+#portfolio .cursoItem::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#portfolio .educacionItem:hover,
+#portfolio .idiomaItem:hover,
+#portfolio .competenciaItem:hover,
+#portfolio .estudiosItem:hover,
+#portfolio .charlaItem:hover,
+#portfolio .materias:hover,
+#portfolio .tareasItem:hover,
+#portfolio .musicaItem:hover,
+#portfolio .historiaItem:hover,
+#portfolio .geologiaItem:hover,
+#portfolio .cursoItem:hover {
+    transform: translateX(10px); /* Efecto de movimiento suave */
+    background: rgba(0, 123, 255, 0.2);
+}
+
+#portfolio .educacionItem a,
+#portfolio .estudiosItem a {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#portfolio .educacionItem a:hover,
+#portfolio .estudiosItem a:hover {
+    text-decoration: underline;
+    color: #003874;
+}
+
+#portfolio .idiomaItem a {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#portfolio .idiomaItem a:hover {
+    text-decoration: underline;
+    color: #003874;
+}
+
+#portfolio .competenciaItem {
+    display: flex;
+    align-items: center; /* Alinea el contenido en el centro verticalmente */
+}
+
+#portfolio .competenciaItem i{
+    font-size: 1.8rem; /* Tamaño del icono */
+    margin-right: 15px;
+    color: #a72861; /* Color rosa oscuro para el icono */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION SOBRE MI*/
+#sobreMi {
+   padding: 70px 70px; /* Espaciado dentro de la sección */
+    /*text-align: left; /* Alineación de texto */
+    /*opacity: 1; /* Asegúrate de que la opacidad inicial sea visible */
+}
+#sobreMi .containerSobreMi {
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.8); /* Semitransparente */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+#sobreMi .tituloSobreMi{
+    font-size: 20px; /* Tamaño de fuente grande */
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */ 
+    font-weight: 700; /* Grosor del texto */
+    color: #2c3e50; /* Color del texto */
+    text-align: left; /* Alineación de texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    background: linear-gradient(90deg, #007bff, #63adde); /* Degradado moderno */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 0px 10px; /* Espaciado interno */
+    margin-bottom: 5px; /* Espaciado inferior */
+    display: inline-block; /* Asegura que el fondo se ajuste al texto */
+}
+
+#sobreMi .tituloSobreMi i {
+    font-size: 20px; /* Tamaño de la fuente igual al del título */
+    color: #2c3e50; /* Color del icono */
+    vertical-align: middle; /* Alineación vertical para centrar con el texto */
+}
+
+#sobreMi .fotoPerfil  {
+    margin-top: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+#sobreMi .imagenPerfil {
+    width: 200px;
+    height:350px;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8); /* Sombra para darle profundidad */
+}
+#sobreMi .clear{
+    width: 50px;
+    height: 50px;
+}
+
+#sobreMi .nombreBotonPerfil {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: stretch; /* Coloca el título a la izquierda y el botón a la derecha */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio sea insuficiente */
+    
+}
+
+#sobreMi .nombreBotonPerfil h3{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#sobreMi .nombreBotonPerfil a{
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    margin-left: -2px;
+    margin-right: 5px;
+    font-size: 12px; /* Tamaño de fuente grande */
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */
+}
+
+#sobreMi .descripcionPerfil p{
+   /* float: right; */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Poppins', sans-serif; /* Tipografía consistente */
+    font-size: 16px; /* Tamaño de fuente grande */
+    margin-bottom: 15px;
+   /* width: 100%;*/
+}
+
+#sobreMi .localizacionPerfil {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: stretch; /* Coloca el título a la izquierda y el botón a la derecha */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio sea insuficiente */
+    margin-bottom: 50px; /* Espaciado inferior */
+}
+
+#sobreMi .localizacionPerfil h3{
+    margin-right: 10px;
+}
+
+#sobreMi .ciudadPerfil{
+    padding: 10px 20px; /* Espaciado interno */
+    background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(255,255,255,0.8)); /* Degradado sutil */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más marcada */
+    border: 2px solid #007bff; /* Borde azul */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+#sobreMi .ciudadPerfil:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra en hover */
+}
+
+#sobreMi .intereses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sobreMi .interes-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #63adde, #007bff); /* Degradado de fondo */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más suave y grande */
+    transition: transform 0.3s;    
+}
+
+#sobreMi .interes-item:hover {
+    transform: scale(1.1) rotate(5deg); /* Escala y ligera rotación en hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#sobreMi .interes-item i {
+    font-size: 2.5rem; /* Icono más grande */
+    margin-right: 15px;
+}
+
+#sobreMi .interes-item h3 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#sobreMi .habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sobreMi .habilidad-item {
+    display: flex;
+    align-items: center; /* Alinea el contenido en el centro verticalmente */
+    padding: 10px;
+    margin-top: 10px;
+    margin: 5px;
+    background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(255,255,255,0.8)); /* Degradado sutil */
+    border-radius: 20px;
+    border: 2px solid #007bff; /* Borde azul */
+    transition: box-shadow 0.3s, filter 0.3s;
+}
+
+#sobreMi .habilidad-item:hover {
+    background-color: #61adff; /* Fondo verde claro en hover */
+    filter: brightness(1.2); /* Aumenta el brillo */
+}
+
+#sobreMi .habilidad-item i {
+    font-size: 1.8rem; /* Tamaño del icono */
+    margin-right: 15px;
+    color: #a72861; /* Color rosa oscuro para el icono */
+}
+
+#sobreMi .habilidad-item h3 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+#sobreMi .mapa {
+    width: 75%;
+    padding-bottom: 42.19%; /* Proporción 16:9 */
+    position: relative; /* Posición relativa para elementos absolutos */
+    margin: 20px auto; /* Centrado */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    transition: filter 0.3s ease, transform 0.3s ease;
+    filter: grayscale(100%); /* Inicialmente en escala de grises */
+}
+
+#sobreMi .mapa iframe {
+    position: absolute; /* Posición absoluta */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    border: none; /* Sin borde */
+}
+
+#sobreMi .mapa:hover {
+    filter: grayscale(0%); /* Colores normales al hacer hover */
+    transform: scale(1.05); /* Zoom ligero  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION CONTACTO*/
+/* SI */
+#contacto {
+   padding: 70px 70px; /* Espaciado dentro de la sección */
+    text-align: left; /* Alineación de texto */
+    /*opacity: 1; /* Asegúrate de que la opacidad inicial sea visible */
+}
+/*SI*/
+#contacto .containerContacto{
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.8); /* Semitransparente */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+    
+/*SI*/
+#contacto .tituloContacto{
+    font-size: 20px; /* Tamaño de fuente grande */
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */ 
+    font-weight: 700; /* Grosor del texto */
+    color: #2c3e50; /* Color del texto */
+    text-align: left; /* Alineación de texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    background: linear-gradient(90deg, #007bff, #63adde); /* Degradado moderno */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 0px 10px; /* Espaciado interno */
+    display: inline-block; /* Asegura que el fondo se ajuste al texto */
+    
+}
+/*SI*/
+#contacto .tituloContacto i{
+    font-size: 20px; /* Tamaño de la fuente igual al del título */
+    color: #2c3e50; /* Color del icono */
+    vertical-align: middle; /* Alineación vertical para centrar con el texto */
+}
+/*SI*/
+#contacto .subtituloContacto {
+    margin-top: 10px; /* Espaciado superior */
+    font-size: 18px; /* Tamaño de fuente grande */
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */  
+    font-weight: 100; /* Grosor del texto */
+    color: #333; 
+    margin-bottom: 20px;
+}
+/*SI*/
+#contacto .correoElectronicoContacto,
+#contacto .redesSocialesContacto {
+    margin-top: 20px; /* Separación superior */
+    padding: 10px 20px; /* Espaciado interno */
+    background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(255,255,255,0.8)); /* Degradado sutil */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más marcada */
+    border: 2px solid #007bff; /* Borde azul */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    overflow: hidden; /* Ocultar desbordes */
+    white-space: nowrap; /* No permitir saltos de línea */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto es demasiado largo */
+}
+/*SI*/
+#contacto .correoElectronicoContacto:hover,
+#contacto .redesSocialesContacto:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra en hover */
+}
+
+/*SI*/
+#contacto .tituloCorreoContacto {
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */
+    font-weight: 600; /* Grosor del texto */
+    color: #34495e; /* Color de texto */
+    margin-bottom: 12px; /* Espaciado inferior */
+    letter-spacing: 1px; /* Espaciado entre letras */
+
+}
+/*SI*/
+#contacto .textoEnlace {
+    font-size: 24px; /* Tamaño de fuente responsive */
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color}
+
+/*SI*/
+#contacto .correoElectronicoContacto a:hover {
+    color: #003874; /* Color más oscuro al hacer hover */
+    text-decoration: underline; /* Subrayado al hacer hover */
+}
+/*SI*/
+.tituloRedesSocialesContacto {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+/*SI*/
+#contacto .enlacesRedes a {
+    font-size: 24px; /* Tamaño de iconos */
+    color: #007bff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+/*SI*/
+#contacto .enlacesRedes a:hover {
+    color: #003874;
+    transform: scale(1.1); /* Agrandar icono en hover */
+}
+
