@@ -350,7 +350,7 @@ footer {
 }
 
 #portfolio .containerPortfolio {
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(249, 249, 249, 0.8); /* Semitransparente */
     border-radius: 10px; /* Bordes redondeados opcionales */
 }
@@ -579,7 +579,7 @@ footer {
     /*opacity: 1; /* Asegúrate de que la opacidad inicial sea visible */
 }
 #sobreMi .containerSobreMi {
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(249, 249, 249, 0.8); /* Semitransparente */
     border-radius: 10px; /* Bordes redondeados opcionales */
 }
@@ -799,7 +799,7 @@ footer {
 }
 /*SI*/
 #contacto .containerContacto{
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(249, 249, 249, 0.8); /* Semitransparente */
     border-radius: 10px; /* Bordes redondeados opcionales */
 }
