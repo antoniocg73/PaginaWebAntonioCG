@@ -207,6 +207,20 @@ body {
     color: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .headerMenuHorizontal {
         padding: 0;
@@ -245,7 +259,62 @@ body {
         display: block;
         margin: 10px 0;
     }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    h3 {
+        font-size: 0.7rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    i {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .fotoDescripcionPerfil {
+        flex-direction: column; /* Apilar los elementos verticalmente */
+
+    }
+
+    .fotoPerfil img {
+        width: 80%; /* Ajustar el tamaño de la imagen */
+        max-width: 300px;
+    }
+    
+    /* Ubicar nombre y botón debajo de la imagen */
+    .nombreBotonPerfil {
+        margin-top: 10px; /* Espacio adicional debajo de la imagen */
+        text-align: center;
+    }
 }
+
+@media (max-width: 500px) {
+    p {
+        font-size: 0.6rem;
+    }
+    h3 {
+        font-size: 0.5rem;
+    }
+    a {
+        font-size: 0.7rem;
+    }
+    i {
+        font-size: 0.8rem;
+    }
+    img {
+        width: 80%;
+    }
+}
+
 
 
 
@@ -414,7 +483,7 @@ footer {
     color: #2c3e50;
     margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #portfolio .experienciaLaboral p,
@@ -425,7 +494,7 @@ footer {
 #portfolio .musicaItem p,
 #portfolio .historiaItem p,
 #portfolio .geologiaItem p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
     font-family: "Poppins", sans-serif;
 }
@@ -622,34 +691,30 @@ footer {
     height: 50px;
 }
 
-#sobreMi .nombreBotonPerfil {
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: stretch; /* Coloca el título a la izquierda y el botón a la derecha */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio sea insuficiente */
-    
-}
-
-#sobreMi .nombreBotonPerfil h3{
+#sobreMi .descripcionPerfil h3{
     font-size: 15px;
     margin-right: 10px;
+    margin-top: 5px;
 }
 
-#sobreMi .nombreBotonPerfil a{
+#sobreMi .descripcionPerfil a{
     margin-top: 5px; 
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-left: -2px;
     margin-right: 5px;
     font-size: 12px; /* Tamaño de fuente grande */
     font-family: 'Poppins', sans-serif; /* Tipografía elegante */
 }
 
-#sobreMi .descripcionPerfil p{
+#sobreMi .descripcionPerfil p,
+#sobreMi .descripcionPerfil h3,
+sobreMi .descripcionPerfil a {
    /* float: right; */
     border-radius: 10px; /* Bordes redondeados */
     font-family: 'Poppins', sans-serif; /* Tipografía consistente */
     font-size: 16px; /* Tamaño de fuente grande */
     margin-bottom: 15px;
+    margin-top: 15px;
    /* width: 100%;*/
 }
 
@@ -859,7 +924,7 @@ footer {
 
 /*SI*/
 #contacto .tituloCorreoContacto {
-    font-size: 24px; /* Tamaño de fuente grande */
+    font-size: 20px; /* Tamaño de fuente grande */
     font-family: 'Poppins', sans-serif; /* Tipografía elegante */
     font-weight: 600; /* Grosor del texto */
     color: #34495e; /* Color de texto */
@@ -869,7 +934,7 @@ footer {
 }
 /*SI*/
 #contacto .textoEnlace {
-    font-size: 24px; /* Tamaño de fuente responsive */
+    font-size: 20px; /* Tamaño de fuente responsive */
     color: #007bff;
     text-decoration: none;
     font-weight: 500;
@@ -882,7 +947,7 @@ footer {
 }
 /*SI*/
 .tituloRedesSocialesContacto {
-    font-size: 26px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #34495e;
@@ -891,7 +956,7 @@ footer {
 }
 /*SI*/
 #contacto .enlacesRedes a {
-    font-size: 24px; /* Tamaño de iconos */
+    font-size: 20px; /* Tamaño de iconos */
     color: #007bff;
     margin-right: 15px;
     transition: color 0.3s ease;
