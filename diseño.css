@@ -346,7 +346,7 @@ footer {
 
 /*SECCION PORTFOLIO*/
 #portfolio {
-    padding: 70px 70px; /* Espaciado dentro de la sección */
+    padding: 70px 50px; /* Espaciado dentro de la sección */
 }
 
 #portfolio .containerPortfolio {
@@ -574,7 +574,7 @@ footer {
 
 /*SECCION SOBRE MI*/
 #sobreMi {
-   padding: 70px 70px; /* Espaciado dentro de la sección */
+   padding: 70px 50px; /* Espaciado dentro de la sección */
     /*text-align: left; /* Alineación de texto */
     /*opacity: 1; /* Asegúrate de que la opacidad inicial sea visible */
 }
@@ -793,7 +793,7 @@ footer {
 /* SECCION CONTACTO*/
 /* SI */
 #contacto {
-   padding: 70px 70px; /* Espaciado dentro de la sección */
+   padding: 70px 50px; /* Espaciado dentro de la sección */
     text-align: left; /* Alineación de texto */
     /*opacity: 1; /* Asegúrate de que la opacidad inicial sea visible */
 }
