@@ -164,44 +164,95 @@ body {
     position: fixed; /* Encabezado fijo */
     width: 100%; /* Ancho completo */
     z-index: 1000; /* Asegura que el encabezado esté encima */
+    top: 0; /* Asegura que el encabezado esté en la parte superior */
+    left: 0; /* Asegura que el encabezado esté en la parte superior */
     background-color: #333; /* Color de fondo oscuro */
     padding: 15px 0; /* Espaciado arriba y abajo */
     box-shadow: 0 2px 10px rgb(252, 252, 252); /* Sombra sutil */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 /*SI*/
 .ulMenuHorizontal { /* Lista de navegación */
     /*list-style: none; /* Quitar el estilo de lista */
     /*padding: 0; /* Quitar el padding */
     /*margin: 0; /* Quitar el margen */
-    display: flex; /* Hacer la lista horizontal */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 /*SI*/
-.liInicio,
-.liSobreMi,
-.liProyectos,
-.liPortfolio,
-.liExperiencia,
-.liContacto { /* Elementos de la lista */
-    margin: 0 20px; /* Espaciado entre elementos horizontalmente */
+.ulMenuHorizontal li{ /* Elementos de la lista */
+    display: inline;
 }
 /*SI*/
-.aInicio,
-.aSobreMi,
-.aProyectos,
-.aPortfolio,
-.aExperiencia,
-.aContacto { /* Enlaces de la lista */
-    text-decoration: none; /* Quitar subrayado */
-    color: white; /* Color del texto */
-    font-size: 18px; /* Tamaño del texto */
-    /*transition: color 0.3s; /* Transición de color */
+.ulMenuHorizontal a{ /* Enlaces de la lista */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+.ulMenuHorizontal a:hover {
+    color: #007bff;
 }
 
-/*
-.btn:hover { /* Efecto hover 
-    background-color: #ffffff;
-}*/
+.hamburguesa {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .headerMenuHorizontal {
+        padding: 0;
+    }
+    nav {
+        padding: 8px;
+        background-color: #333;
+
+    }
+ 
+    .hamburguesa {
+        display: block;
+        position: static;
+        right: 20px;
+        top: 15px;
+        color: white;
+    }
+
+    .ulMenuHorizontal {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ulMenuHorizontal.show {
+        display: flex; /* Muestra el menú */
+    }
+
+    .ulMenuHorizontal li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
 /*SI*/
 section { /* Secciones */
     position: absolute; /* Posición absoluta */
@@ -222,6 +273,7 @@ section.active { /* Sección activa */
     /*opacity: 1; /* Asegúrate de que la opacidad sea 1 */
     visibility: visible; /* Asegúrate de que la visibilidad sea visible */
 }
+
 
 
 
@@ -327,7 +379,8 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     padding: 0 10px; 
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     display: inline-block;
     border-bottom: 3px solid #007bff; /* Línea azul debajo */
 }
@@ -475,10 +528,40 @@ footer {
     color: #a72861; /* Color rosa oscuro para el icono */
 }
 
+#portfolio .progItem {
+    margin: 10px 0;
+    font-family: "poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 
+#portfolio .progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+#portfolio .progress {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    font-size: 0.9rem;
+    text-align: right;
+    border-radius: 8px;
+}
 
-
+#portfolio .herramientas,
+#portfolio .desarrolloWeb,
+#portfolio .lenguajesProg {
+    margin-bottom: 20px;
+    padding: 10px; /* Espaciado interno */
+    background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(255,255,255,0.8)); /* Degradado sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más marcada */
+    border: 2px solid #007bff; /* Borde azul */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
 
 
 
@@ -741,10 +824,11 @@ footer {
     font-size: 20px; /* Tamaño de la fuente igual al del título */
     color: #2c3e50; /* Color del icono */
     vertical-align: middle; /* Alineación vertical para centrar con el texto */
+    margin-top: 20px;
 }
 /*SI*/
 #contacto .subtituloContacto {
-    margin-top: 10px; /* Espaciado superior */
+    margin-top: 20px; /* Espaciado superior */
     font-size: 18px; /* Tamaño de fuente grande */
     font-family: 'Poppins', sans-serif; /* Tipografía elegante */  
     font-weight: 100; /* Grosor del texto */

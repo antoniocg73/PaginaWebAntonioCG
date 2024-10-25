@@ -21,6 +21,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         setTimeout(() => {
             targetSection.style.opacity = '1'; // Cambia la opacidad
         }, 50); // Tiempo de espera breve antes de cambiar la opacidad
+        
+         // Cierra el menú hamburguesa al hacer clic en una sección (en pantallas pequeñas)
+         const menu = document.querySelector('.ulMenuHorizontal');
+         if (menu.classList.contains('show')) {
+             menu.classList.remove('show'); // Oculta el menú hamburguesa
+         }
     });
 });
 
@@ -31,3 +37,13 @@ window.onload = function() {
     inicioSection.style.opacity = '1'; // Asegúrate de que sea visible
     inicioSection.style.visibility = 'visible'; // Asegúrate de que sea visible
 };
+
+// Seleccionamos el ícono de la hamburguesa y el menú
+const hamburguesa = document.querySelector('.hamburguesa');
+const menu = document.querySelector('.ulMenuHorizontal');
+
+// Agregamos el evento de clic en el ícono de la hamburguesa
+hamburguesa.addEventListener('click', () => {
+    // Alternamos la clase "show" en el menú cuando se hace clic en la hamburguesa
+    menu.classList.toggle('show');
+});
