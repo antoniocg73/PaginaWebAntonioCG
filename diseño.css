@@ -192,12 +192,14 @@ body {
 /*SI*/
 .ulMenuHorizontal a{ /* Enlaces de la lista */
     color: white;
+    font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 .ulMenuHorizontal a:hover {
     color: #007bff;
+    font-weight: bold;
 }
 
 .hamburguesa {
